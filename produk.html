@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produk – Aurum Pulsa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="index.html">Aurum<span>Pulsa</span></a>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="produk.html" aria-current="page">Produk</a>
+        <a href="kontak.html">Kontak</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="shop">
+      <section>
+        <h1 style="font-size:clamp(2rem,4vw,3rem)">Pilih produk</h1>
+        <div class="tabs" role="tablist">
+          <button role="tab" id="tab-pulsa" aria-selected="true" data-tab="pulsa">Pulsa</button>
+          <button role="tab" id="tab-data" aria-selected="false" data-tab="data">Paket Data</button>
+        </div>
+        <label for="nomor">Nomor HP</label>
+        <div class="numrow">
+          <input id="nomor" type="tel" inputmode="numeric" placeholder="0812 3456 7890" autocomplete="tel">
+          <span id="operator">Operator?</span>
+        </div>
+        <p id="msg" class="msg" aria-live="polite"></p>
+        <div id="items" class="items" role="group" aria-label="Daftar produk"></div>
+      </section>
+
+      <aside class="sum" aria-label="Ringkasan pesanan">
+        <h3>Ringkasan pesanan</h3>
+        <dl>
+          <dt>Nomor</dt>
+          <dd id="s-nomor">-</dd>
+          <dt>Operator</dt>
+          <dd id="s-op">-</dd>
+          <dt>Produk</dt>
+          <dd id="s-item">-</dd>
+        </dl>
+        <div class="total"><span>Total bayar</span><strong id="total">Rp0</strong></div>
+        <a id="pesan" class="btn" aria-disabled="true">Pesan via WhatsApp</a>
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap"><span>© 2026 Aurum Pulsa</span><span>Harga dapat berubah sewaktu-waktu.</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
