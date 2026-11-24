@@ -157,7 +157,7 @@ h2 {
     margin-bottom: 36px
 }
 
-/* Beranda */
+
 .hero {
     padding: 72px 0 88px;
     background: radial-gradient(ellipse at 80% 20%, rgba(212, 175, 55, .16), transparent 55%)
@@ -343,7 +343,7 @@ a.tile:hover {
     flex-wrap: wrap
 }
 
-/* Produk */
+
 .shop {
     display: grid;
     grid-template-columns: 1fr 340px;
@@ -538,7 +538,7 @@ a.tile:hover {
     text-align: center
 }
 
-/* Kontak */
+
 .kontak {
     display: grid;
     grid-template-columns: 1fr 1fr;
